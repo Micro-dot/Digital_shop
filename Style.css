@@ -7,16 +7,18 @@ body
     margin: 0px;
     width: 100%;
 }
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .container{
     background-color:#ffff;
-    
     padding: 30px;
     border-radius: 10px;
+    
 }
 .part1 {
     display: flex;
@@ -38,7 +40,6 @@ button{
 .camera img{
     width: 440px;
     height: 414px;
-    margin-bottom: 50;
     background-image: url(./images/Circle\ design.svg);
 }
 /* Section1 */
@@ -88,7 +89,8 @@ button{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 1090px;
+    width: 1000px;
+    margin-top: 10px;
 }
 .button2 a{
     color: #E02C6D;
@@ -108,8 +110,10 @@ button{
     margin-bottom: 50px;
 }
 .section2{
-    margin-left:90px;
-    width: 690px;
+    margin-left:40px;
+    width: 670px;
+    margin-top: -40px;
+    
     
 }
 .button3{
@@ -137,4 +141,17 @@ footer{
 }
 .icon{
     font-size: 20px;
+}
+
+/* Mobile Device */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .part1,.courses,.part2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .part1, .courses,.part2{
+        flex-direction: column;
+    }
 }
