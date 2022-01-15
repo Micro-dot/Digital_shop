@@ -60,6 +60,7 @@ button{
     box-shadow: 6px 4px 20px #AAAAAA;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
 }
 .thumbnial img{
     width: 300px;
